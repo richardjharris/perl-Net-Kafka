@@ -10,7 +10,7 @@ before_install:
   - sudo apt-get update -q
   - sudo apt-get install librdkafka-dev
   - mkdir kafka && cd kafka
-  - curl "https://www.apache.org/dist/kafka/$KAFKA_VERSION/kafka_2.13-$KAFKA_VERSION.tgz" -o kafka.tgz
+  - curl "https://downloads.apache.org/kafka/$KAFKA_VERSION/kafka_2.13-$KAFKA_VERSION.tgz" -o kafka.tgz
   - tar -xvzf kafka.tgz --strip 1
   - echo -e "\nauto.create.topics.enable=false" >> config/server.properties
   - bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
