@@ -1,4 +1,4 @@
-use 5.22.0;
+use 5.16.0;
 use strict;
 use warnings;
 
@@ -62,7 +62,7 @@ WriteMakefile(
             },
         },
     },
-    MIN_PERL_VERSION    => '5.22.0',
+    MIN_PERL_VERSION    => '5.16.0',
     CONFIGURE_REQUIRES  => {
         'ExtUtils::MakeMaker' => 0,
         'ExtUtils::PkgConfig' => 0,

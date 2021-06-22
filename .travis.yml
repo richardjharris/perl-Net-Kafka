@@ -1,9 +1,6 @@
 language: "perl"
 perl:
-  - "5.22"
-  - "5.26"
-  - "5.28"
-  - "5.30"
+  - "5.16"
 sudo: required
 env:
   - KAFKA_VERSION=2.3.0 LIBRDKAFKA_VERSION=1.1.0~1confluent5.3.1-1 KAFKA_BOOTSTRAP_SERVERS=localhost:9092 KAFKA_TEST_TOPIC=test KAFKA_TEST_TOPIC_PARTITIONS=8 KAFKA_CONSUMER_GROUP_PREFIX=net-kafka
